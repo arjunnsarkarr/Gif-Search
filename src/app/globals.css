@@ -2,26 +2,79 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.parentDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: double;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.searchDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  margin: 5vh 0;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.search {
+  width: 57.8125vw;
+  margin-right: 1vw;
+  background-color: rgba(242, 244, 248, 1);
+  padding: 24px;
+  border-radius: 12px;
+}
+
+.btn {
+  background-color: black;
+  color: white;
+  padding: 24px 45px;
+  border-radius: 12px;
+
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  margin: 8vh 0;
+
+}
+
+.card {
+  margin: 0 5vh;
+  height: 15vh ;
+  width: 18vw;
+  
+}
+
+.card div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card img {
+  height: 30vh ;
+  width: 20vw;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+
+.pagination-btn div p{
+  margin-inline: 1vw;
+}
+.pagination-btn div{
+  margin-inline: 2vw;
+  display: flex;
+  flex-direction: row;
+}
+.pagination-btn{
+  margin-top: 25vh;
+  display: flex;
+  flex-direction: row;
 }
